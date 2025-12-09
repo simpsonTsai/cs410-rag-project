@@ -1,14 +1,11 @@
 pypdf
-unstructured
 sentence-transformers
 langchain-text-splitters
 tqdm
 pandas
 numpy
-lancedb
 faiss-cpu
 rank-bm25
 groq
 python-dotenv
 matplotlib
-python-dotenv
