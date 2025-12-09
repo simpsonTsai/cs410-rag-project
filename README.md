@@ -84,29 +84,29 @@ cs410-rag-project/
 ### 1. Clone the repository
 
 
-git clone https://github.com/simpsonTsai/cs410-rag-project
-cd cs410-rag-project
+- git clone https://github.com/simpsonTsai/cs410-rag-project
+- cd cs410-rag-project
 
 
 ### 2. Create a virtual environment
 
-python3 -m venv venv
-source venv/bin/activate      # Mac/Linux
+- python3 -m venv venv
+- source venv/bin/activate      # Mac/Linux
 
-venv\Scripts\activate         # Windows
+- venv\Scripts\activate         # Windows
 
 
 ### 3. Install dependencies
 
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 
 ## API Keys Setup
 
 ### 1. Create your .env file:
-cp .env.example .env
+- cp .env.example .env
 ### 2. Open .env and add your key:
-GROQ_API_KEY=your_key_here
+- GROQ_API_KEY=your_key_here
 
 ## Required Data
 Place the veterinary reference book (PDF) inside the data/ folder:
@@ -117,7 +117,7 @@ data/databook.pdf
 ## How to Run the System
 To run the entire system — baseline RAG, improved RAG, GPT-only baseline, evaluation metrics, and visualizations — run:
 
-python src/run.py
+- python src/run.py
 
 This performs:
 
