@@ -137,6 +137,11 @@ After put in your GROQ API KEY:
 ## Required Data
 Place the veterinary reference book (PDF) inside the data/ folder:
 data/databook.pdf
+### The original source is:
+*Rand, J. M. (Ed.). **Problem-Based Feline Medicine.***
+© 2006 Elsevier Limited. All rights reserved.  
+ISBN-10: 0702024880  
+ISBN-13: 978-0702024887
 
 
 
@@ -196,10 +201,11 @@ This project makes use of information derived from a copyrighted academic public
 
 The original source is:
 
-© 2006 Elsevier Limited. All rights reserved.
-First published in 2006.
-ISBN-10: 0702024880
+*Rand, J. M. (Ed.). **Problem-Based Feline Medicine.***
+© 2006 Elsevier Limited. All rights reserved.  
+ISBN-10: 0702024880  
 ISBN-13: 978-0702024887
+
 
 The original PDF document (databook.pdf) is copyrighted and proprietary and is NOT redistributed as part of this repository.
 
