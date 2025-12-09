@@ -1,6 +1,6 @@
 # CS410 RAG Project – Veterinary Clinical Decision Support
 
-This repository contains my UIUC CS410 final project: a retrieval-augmented generation (RAG) agent for veterinary internal medicine cases, with query decomposition and multi-aspect retrieval.
+This repository contains my UIUC CS410 2025 FALL final project: a retrieval-augmented generation (RAG) agent for veterinary internal medicine cases, with query decomposition and multi-aspect retrieval.
 
 The system compares three configurations:
 
