@@ -137,6 +137,7 @@ After put in your GROQ API KEY:
 ## Required Data
 Place the veterinary reference book (PDF) inside the data/ folder:
 data/databook.pdf
+
 An appropriate reference of databook.pdf is shown below.
 
 ## How to Run the System
