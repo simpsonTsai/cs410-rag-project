@@ -34,9 +34,6 @@ This system is fully reproducible and engineered using clean Python modules.
 
 ---
 
-
-This repository contains my UIUC CS410 2025 FALL final project: a retrieval-augmented generation (RAG) agent for veterinary internal medicine cases, with query decomposition and multi-aspect retrieval.
-
 The system compares three configurations:
 
 - **Baseline RAG**: single-query retrieval + reranking
