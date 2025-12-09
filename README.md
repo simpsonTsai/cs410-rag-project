@@ -80,6 +80,13 @@ cs410-rag-project/
 ---
 
 ## Installation
+## 🐍 Python Version
+
+This project is tested and supported on **Python 3.10**.
+
+Please use Python **3.10.x** to ensure smooth installation of all dependencies
+(e.g., `faiss-cpu` and `sentence-transformers`) without requiring system-level
+build tools such as `cmake`.
 
 ### 1. Clone the repository
 
@@ -118,6 +125,10 @@ cs410-rag-project/
 ```bash
 - GROQ_API_KEY=your_key_here
 ```
+After put in your GROQ API KEY:
+1. Ctrl + 0 (store)
+2. Enter
+3. Ctrl + X (exit)
 
 ## Required Data
 Place the veterinary reference book (PDF) inside the data/ folder:
