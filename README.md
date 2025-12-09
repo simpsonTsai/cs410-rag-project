@@ -189,3 +189,21 @@ Scaled from original 0–5 rubric.
 - Results include printed tables and:
 1. Bar charts
 2. Radar chart comparing three systems
+   
+## Data Source & Copyright Notice
+
+databook.pdf used in this project is derived from a copyrighted publication:
+
+© 2006 Elsevier Limited. All rights reserved.
+First published in 2006.
+ISBN-10: 0702024880
+ISBN-13: 978-0702024887
+
+This material is copyrighted and proprietary.
+The PDF file is NOT redistributed as part of this repository.
+
+The document was accessed through legitimate academic means and is used solely for educational and non-commercial purposes in the context of the UIUC CS410 course project.
+Any derived data (e.g., embeddings, indexes, or preprocessed text segments) are not intended to reconstruct the original work and are used strictly for system demonstration and evaluation purposes.
+
+All rights remain with Elsevier Limited.
+For copyright and permissions information, please refer to Elsevier’s official website.
