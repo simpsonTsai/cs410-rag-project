@@ -91,10 +91,12 @@ cs410-rag-project/
 
 ### 2. Create a virtual environment
 ```bash
-
 - python3 -m venv venv
-
+```
+```bash
 - source venv/bin/activate      # Mac/Linux
+```
+```bash
 - venv\Scripts\activate         # Windows
 ```
 
