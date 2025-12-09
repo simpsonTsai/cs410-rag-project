@@ -100,11 +100,13 @@ build tools such as `cmake`.
 ```bash
 - python3 -m venv venv
 ```
+#### Mac/Linux
 ```bash
-- source venv/bin/activate      # Mac/Linux
+- source venv/bin/activate    
 ```
+#### Windows
 ```bash
-- venv\Scripts\activate         # Windows
+- venv\Scripts\activate         
 ```
 
 ### 3. Install dependencies
