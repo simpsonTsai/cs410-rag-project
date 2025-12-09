@@ -1,7 +1,8 @@
 <h1 align="center">🐾 VetRAG — Veterinary Retrieval-Augmented Generation System</h1>
 
 <p align="center">
-  <strong>CS410 Final Project — UIUC</strong><br>
+  <strong>2025 Fall CS410 Final Project — UIUC</strong><br>
+  <strong>Instructor: ChengXiang Zhai<br>
   A multi-aspect RAG system for veterinary clinical decision support.
 </p>
 
