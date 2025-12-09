@@ -1,4 +1,35 @@
-# CS410 RAG Project – Veterinary Clinical Decision Support
+<h1 align="center">🐾 VetRAG — Veterinary Retrieval-Augmented Generation System</h1>
+
+<p align="center">
+  <strong>CS410 Final Project — UIUC</strong><br>
+  A multi-aspect RAG system for veterinary clinical decision support.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Groq-LLM-orange">
+  <img src="https://img.shields.io/badge/RAG-System-green">
+  <img src="https://img.shields.io/badge/FAISS-Indexing-blue">
+</p>
+
+---
+
+## 📘 Overview
+
+**VetRAG** is a modular Retrieval-Augmented Generation system designed for assisting with veterinary clinical reasoning.  
+It extends baseline RAG with:
+
+- Hybrid dense + BM25 search  
+- BGE reranker  
+- LLM-based multi-query decomposition  
+- Multi-aspect evidence fusion  
+- Structured clinical output generation  
+- Automated evaluation across correctness, hallucination, and evidence relevance  
+
+This system is fully reproducible and engineered using clean Python modules.
+
+---
+
 
 This repository contains my UIUC CS410 2025 FALL final project: a retrieval-augmented generation (RAG) agent for veterinary internal medicine cases, with query decomposition and multi-aspect retrieval.
 
@@ -54,22 +85,27 @@ cs410-rag-project/
 git clone https://github.com/simpsonTsai/cs410-rag-project
 cd cs410-rag-project
 
+
 2. Create a virtual environment
+
 python3 -m venv venv
 source venv/bin/activate      # Mac/Linux
 
 venv\Scripts\activate         # Windows
 
+
 3. Install dependencies
+
 pip install -r requirements.txt
 
-API Keys Setup
+
+4. API Keys Setup
 #####
 ---------------------------------
-How to Run the System
+5. How to Run the System
 
 python src/run.py
-
+```text
 This script:
 
 Loads the PDF
@@ -96,3 +132,4 @@ Generates radar and bar charts
 
 All results print directly to console and display visualizations.
 
+```
