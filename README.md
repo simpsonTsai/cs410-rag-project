@@ -79,14 +79,14 @@ cs410-rag-project/
 
 ## Installation
 
-1. Clone the repository
+### 1. Clone the repository
 
 
 git clone https://github.com/simpsonTsai/cs410-rag-project
 cd cs410-rag-project
 
 
-2. Create a virtual environment
+### 2. Create a virtual environment
 
 python3 -m venv venv
 source venv/bin/activate      # Mac/Linux
@@ -94,42 +94,70 @@ source venv/bin/activate      # Mac/Linux
 venv\Scripts\activate         # Windows
 
 
-3. Install dependencies
+### 3. Install dependencies
 
 pip install -r requirements.txt
 
 
-4. API Keys Setup
-#####
----------------------------------
-5. How to Run the System
+## API Keys Setup
+
+### 1. Create your .env file:
+cp .env.example .env
+### 2. Open .env and add your key:
+GROQ_API_KEY=your_key_here
+
+## Required Data
+Place the veterinary reference book (PDF) inside the data/ folder:
+data/databook.pdf
+
+
+
+## How to Run the System
+To run the entire system — baseline RAG, improved RAG, GPT-only baseline, evaluation metrics, and visualizations — run:
 
 python src/run.py
-```text
-This script:
 
-Loads the PDF
+This performs:
 
-Builds chunks
+1. PDF loading & chunking
+2. BGE-M3 embeddings + FAISS index
+3. Hybrid BM25 + dense retrieval
+4. Cross-encoder reranking
+5. Query decomposition (improved system)
+6. Evidence fusion
+7. LLM answer generation
+8. Evaluation (correctness, hallucination, relevance)
+9. Radar / bar charts visualization
 
-Builds embeddings and FAISS index
+## RAG System Variants
 
-Initializes the retriever
+### Baseline RAG
+- Single-query retrieval
+- Hybrid BM25 + dense search
+- Cross-encoder reranking
 
-Initializes Groq LLM client
+### Improved RAG
+- LLM-based query decomposition (2–4 sub-queries)
+- Multi-aspect evidence fusion
+- Structured clinical reasoning
 
-Runs:
+### GPT-only
+- Answers using only the LLM prior
+- No retrieval (serves as degenerate baseline)
 
-Baseline RAG
+## Evaluation Metrics
 
-Improved (query decomposition + multi-aspect fusion)
+The evaluation compares baseline, improved, and GPT-only systems across:
 
-GPT-only (no retrieval)
+- Correctness (0–10):
+LLM-graded via rubric (A/B/C/D/F → numeric score).
 
-Evaluates correctness, hallucination, and evidence relevance
+- Hallucination (0–10, lower = better):
+Measures unsupported or fabricated content.
 
-Generates radar and bar charts
+- Evidence Relevance (0–10):
+Scaled from original 0–5 rubric.
 
-All results print directly to console and display visualizations.
-
-```
+- Results include printed tables and:
+1. Bar charts
+2. Radar chart comparing three systems
