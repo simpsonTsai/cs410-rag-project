@@ -192,18 +192,32 @@ Scaled from original 0–5 rubric.
    
 ## Data Source & Copyright Notice
 
-databook.pdf used in this project is derived from a copyrighted publication:
+This project makes use of information derived from a copyrighted academic publication for educational and non-commercial purposes only, as part of a course project for UIUC CS410 (Text Information Systems).
+
+The original source is:
 
 © 2006 Elsevier Limited. All rights reserved.
 First published in 2006.
 ISBN-10: 0702024880
 ISBN-13: 978-0702024887
 
-This material is copyrighted and proprietary.
-The PDF file is NOT redistributed as part of this repository.
+The original PDF document (databook.pdf) is copyrighted and proprietary and is NOT redistributed as part of this repository.
 
-The document was accessed through legitimate academic means and is used solely for educational and non-commercial purposes in the context of the UIUC CS410 course project.
-Any derived data (e.g., embeddings, indexes, or preprocessed text segments) are not intended to reconstruct the original work and are used strictly for system demonstration and evaluation purposes.
+### Use of Derived Data
+This project performs preprocessing on the source material, including but not limited to:
+- text extraction
+- chunking / segmentation
+- embedding generation
+- index construction for information retrieval
+All derived artifacts (e.g., text chunks, embeddings, indexes) are used solely to demonstrate system design and retrieval behavior for the course assignment.
 
-All rights remain with Elsevier Limited.
-For copyright and permissions information, please refer to Elsevier’s official website.
+These derived data are non-reconstructive and cannot be used to recover the original copyrighted work.
+No attempt is made to reproduce, redistribute, or substitute the original publication.
+
+All intellectual property rights remain with Elsevier Limited.
+For official copyright and permissions information, please refer to Elsevier’s website.
+## Important Notes
+
+This repository does not contain the original databook.pdf.
+Access to the original material was obtained through legitimate academic means.
+This project is intended strictly for educational demonstration, not for clinical, commercial, or redistribution purposes.
