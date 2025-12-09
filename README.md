@@ -42,15 +42,15 @@ cs410-rag-project/
 ├── requirements.txt
 ├── .env.example
 └── README.md
-
+```
 
 ---
 
-Installation
+## Installation
 
 1. Clone the repository
 
-```bash
+
 git clone https://github.com/simpsonTsai/cs410-rag-project
 cd cs410-rag-project
 
