@@ -137,13 +137,7 @@ After put in your GROQ API KEY:
 ## Required Data
 Place the veterinary reference book (PDF) inside the data/ folder:
 data/databook.pdf
-### The original source is:
-*Rand, J. M. (Ed.). **Problem-Based Feline Medicine.***
-© 2006 Elsevier Limited. All rights reserved.  
-ISBN-10: 0702024880  
-ISBN-13: 978-0702024887
-
-
+An appropriate reference of databook.pdf is shown below.
 
 ## How to Run the System
 To run the entire system — baseline RAG, improved RAG, GPT-only baseline, evaluation metrics, and visualizations — run:
