@@ -84,15 +84,15 @@ cs410-rag-project/
 ### 1. Clone the repository
 
 
-- git clone https://github.com/simpsonTsai/cs410-rag-project
+- git clone https://github.com/simpsonTsai/cs410-rag-project.git
 - cd cs410-rag-project
 
 
 ### 2. Create a virtual environment
 
 - python3 -m venv venv
-- source venv/bin/activate      # Mac/Linux
 
+- source venv/bin/activate      # Mac/Linux
 - venv\Scripts\activate         # Windows
 
 
@@ -106,6 +106,7 @@ cs410-rag-project/
 ### 1. Create your .env file:
 - cp .env.example .env
 ### 2. Open .env and add your key:
+- nano .env
 - GROQ_API_KEY=your_key_here
 
 ## Required Data
