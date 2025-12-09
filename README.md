@@ -4,7 +4,7 @@
   <strong>2025 Fall CS410 Final Project — University of Illinois Urbana-Champaign</strong><br>
   <strong>Instructor: Prof. ChengXiang Zhai<br>
   <strong>Project Author: Chia Yang Tsai <br>
-  <strong>Netid: ct68<br>
+  <strong>NetID: ct68<br>
   <strong>Email: ct68@illinois.edu<br>
   A multi-aspect RAG system for veterinary clinical decision support.
 </p>
