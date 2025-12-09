@@ -12,4 +12,3 @@ groq
 python-dotenv
 matplotlib
 python-dotenv
-tqdm
