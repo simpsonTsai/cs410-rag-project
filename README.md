@@ -172,12 +172,6 @@ After put in your GROQ API KEY:
 2. Enter
 3. Ctrl + X (exit)
 
-## Required Data
-Place the veterinary reference book (PDF) inside the data/ folder:
-data/databook.pdf
-
-An appropriate reference of databook.pdf is shown below.
-
 ## How to Run the System
 To run the entire system — baseline RAG, improved RAG, GPT-only baseline, evaluation metrics, and visualizations — run:
 ```bash
