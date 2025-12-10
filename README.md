@@ -118,7 +118,7 @@ does not alter the system design or conclusions.
 TA mode is enabled by default.
 To run the full experiment, set the following flag to `False`:
 
-# src/config.py
+src/config.py
 TA_MODE = False
 
 
