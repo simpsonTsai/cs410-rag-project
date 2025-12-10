@@ -91,7 +91,8 @@ build tools such as `cmake`.
 
 ```bash
 git clone https://github.com/simpsonTsai/cs410-rag-project.git
-
+```
+```bash
 cd cs410-rag-project
 ```
 
@@ -125,6 +126,7 @@ cp .env.example .env
 nano .env
 ```
 GROQ_API_KEY=your_key_here
+
 After put in your GROQ API KEY:
 1. Ctrl + 0 (store)
 2. Enter
