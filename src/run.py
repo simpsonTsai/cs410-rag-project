@@ -100,29 +100,26 @@ def run_example_usage():
     load_dotenv()
     client, retriever = init_vetrag_pipeline()
 
-    query = (
-        "My cat has been losing weight, vomiting intermittently, "
-        "and has elevated ALT levels. What are possible diagnoses?"
-    )
-
     print("\n=== Example Usage ===")
-    print("\nQuery:")
-    print(query)
 
-    # Baseline
+    (
+        systems,
+        correctness_vals,
+        hallucination_vals,
+        relevance_vals,
+        df_baseline_eval,
+        df_improved_eval,
+        df_gpt_eval,
+    ) = run_full_experiment(client, retriever)
+
     print("\n--- Baseline RAG ---")
-    base = retriever.run_baseline(client, query)
-    print("Answer:")
-    print(base["answer"])
+    print(df_baseline_eval.iloc[0]["answer"])
 
-    # Improved
     print("\n--- Improved RAG ---")
-    improved = retriever.run_improved(client, query)
-    print("Answer:")
-    print(improved["answer"])
+    print(df_improved_eval.iloc[0]["answer"])
 
     print("\nSupporting Evidence (Improved):")
-    for i, ev in enumerate(improved["evidence"], 1):
+    for i, ev in enumerate(df_improved_eval.iloc[0]["evidence"], 1):
         print(f"[{i}] {ev}")
 
 
