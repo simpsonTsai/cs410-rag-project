@@ -26,4 +26,6 @@ pydantic<2
 httpx
 sniffio
 distro
-
+pyparsing
+cycler
+kiwisolver
