@@ -164,6 +164,9 @@ nano .env
 ```
 GROQ_API_KEY=your_key_here
 
+In this step you need to go to Groq website and create a free API key.
+website address: https://console.groq.com/keys
+
 After put in your GROQ API KEY:
 1. Ctrl + 0 (store)
 2. Enter
