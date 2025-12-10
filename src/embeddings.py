@@ -5,7 +5,11 @@ from sentence_transformers import SentenceTransformer
 import faiss
 from config import TA_MODE, TA_MAX_EMBED
 
-BGE_MODEL_NAME = "BAAI/bge-m3"
+
+if TA_MODE:
+    BGE_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
+else:
+    BGE_MODEL_NAME = "BAAI/bge-m3"
 
 
 def build_bge_embeddings(docs: List[Dict[str, Any]]) -> np.ndarray:
