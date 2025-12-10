@@ -100,6 +100,10 @@ def run_example_usage():
     load_dotenv()
     client, retriever = init_vetrag_pipeline()
     (
+        _systems,
+        _correctness_vals,
+        _hallucination_vals,
+        _relevance_vals,
         df_baseline_eval,
         df_improved_eval,
         df_gpt_eval,
