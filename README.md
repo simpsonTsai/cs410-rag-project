@@ -173,10 +173,17 @@ After put in your GROQ API KEY:
 3. Ctrl + X (exit)
 
 ## How to Run the System
+
 To run the entire system — baseline RAG, improved RAG, GPT-only baseline, evaluation metrics, and visualizations — run:
 ```bash
 python -m src.run
 ```
+A quick reminder: if you see WARNING: There was an error checking the latest version of pip.
+you can run following command:
+```bash
+pip install --upgrade pip
+```
+
 This performs:
 
 1. PDF loading & chunking
