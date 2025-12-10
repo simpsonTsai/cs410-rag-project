@@ -21,7 +21,7 @@ pillow
 sympy
 scikit-learn
 transformers<4.40
-lang_chain_core
+langchain_core
 pydantic<2
 httpx
 sniffio
