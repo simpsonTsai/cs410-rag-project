@@ -96,14 +96,41 @@ def main():
         ],
     )
 
-def demo():
-    query = "My cat has been losing weight, vomiting intermittently, and has elevated ALT levels. What are possible diagnoses?"
-    answer, evidence = rag_pipeline(query)
-    print("Query:", query)
-    print("Answer:", answer)
-    print("Evidence:", evidence)
+def run_example_usage():
+    load_dotenv()
+    client, retriever = init_vetrag_pipeline()
+
+    query = (
+        "My cat has been losing weight, vomiting intermittently, "
+        "and has elevated ALT levels. What are possible diagnoses?"
+    )
+
+    print("\n=== Example Usage ===")
+    print("\nQuery:")
+    print(query)
+
+    # Baseline
+    print("\n--- Baseline RAG ---")
+    base = retriever.run_baseline(client, query)
+    print("Answer:")
+    print(base["answer"])
+
+    # Improved
+    print("\n--- Improved RAG ---")
+    improved = retriever.run_improved(client, query)
+    print("Answer:")
+    print(improved["answer"])
+
+    print("\nSupporting Evidence (Improved):")
+    for i, ev in enumerate(improved["evidence"], 1):
+        print(f"[{i}] {ev}")
+
+
 
 
 if __name__ == "__main__":
-    main()
-    demo()
+    if TA_MODE:
+        run_example_usage()
+    else:
+        main()
+
