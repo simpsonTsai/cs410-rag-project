@@ -17,7 +17,7 @@ from .plotting import (
 )
 
 
-from config import TA_MODE
+from .config import TA_MODE
 
 if TA_MODE:
     print("Quick Running in TA quick-test mode (CPU-friendly)")
