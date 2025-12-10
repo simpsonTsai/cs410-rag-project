@@ -2,7 +2,7 @@ from typing import List
 
 import pandas as pd
 
-from retriever import VetRetriever
+from .retriever import VetRetriever
 
 
 def retrieve_multi_aspect(
