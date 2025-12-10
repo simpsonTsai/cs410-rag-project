@@ -10,3 +10,5 @@ python-dotenv
 matplotlib
 torch>=2.0
 sentence-transformers>=2.6.0
+numpy<2
+
