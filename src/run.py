@@ -102,16 +102,6 @@ def run_example_usage():
 
     print("\n=== Example Usage ===")
 
-    (
-        systems,
-        correctness_vals,
-        hallucination_vals,
-        relevance_vals,
-        df_baseline_eval,
-        df_improved_eval,
-        df_gpt_eval,
-    ) = run_full_experiment(client, retriever)
-
     print("\n--- Baseline RAG ---")
     print(df_baseline_eval.iloc[0]["answer"])
 
