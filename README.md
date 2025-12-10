@@ -90,6 +90,17 @@ Please use Python **3.10.x** to ensure smooth installation of all dependencies
 (e.g., `faiss-cpu` and `sentence-transformers`) without requiring system-level
 build tools such as `cmake`.
 
+## Hardware & Performance Notes
+
+This project can run entirely on CPU.
+However, due to the use of dense embeddings (bge-m3) and re-ranking models,
+some steps such as indexing and retrieval may take more than several minutes on a CPU-only machine.
+
+For grading purposes:
+- The system logic, retrieval pipeline, and generation flow can be verified on CPU.
+- Full-scale experiments were conducted offline and the results are documented in the pic file.
+
+
 ### 1. Clone the repository
 
 ```bash
