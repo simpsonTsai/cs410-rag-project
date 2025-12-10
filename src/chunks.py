@@ -1,12 +1,11 @@
 from typing import List, Dict, Any
-
+from config import TA_MODE, TA_MAX_PAGES, TA_MAX_CHUNKS
 from pypdf import PdfReader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 CHUNK_SIZE = 800
 CHUNK_OVERLAP = 150
-TA_MAX_CHUNKS = 50  #for TA quick test (CPU-friendly)
-MAX_PAGES = 10  # for TA quick test
+
 
 def load_pdf_text(pdf_path: str) -> List[Dict[str, Any]]:
     """
@@ -17,7 +16,7 @@ def load_pdf_text(pdf_path: str) -> List[Dict[str, Any]]:
     reader = PdfReader(pdf_path)
     pages = []
     for i, page in enumerate(reader.pages):
-        if MAX_PAGES and i >= MAX_PAGES:
+        if TA_MODE and i >= TA_MAX_PAGES:
             break
         pages.append({
             "page": i + 1,
@@ -67,7 +66,6 @@ def build_chunks(pages: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
                 "tag": simple_tag_from_text(chunk),
             })
             doc_id += 1
-            if TA_MAX_CHUNKS and len(docs) >= TA_MAX_CHUNKS:
+            if TA_MODE and len(docs) >= TA_MAX_CHUNKS:
                 return docs
-
     return docs
