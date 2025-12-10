@@ -15,11 +15,13 @@ from plotting import (
     plot_radar_chart,
 )
 
-import argparse
-parser = argparse.ArgumentParser()
-parser.add_argument("--ta_mode", action="store_true", help="Enable TA quick test mode (CPU fast)")
-args = parser.parse_args()
-TA_MODE = args.ta_mode
+
+from config import TA_MODE
+
+if TA_MODE:
+    print("Quick Running in TA quick-test mode (CPU-friendly)")
+else:
+    print("Quick Running in full experiment mode")
 
 def init_vetrag_pipeline(pdf_path: str | None = None):
     base_dir = Path(__file__).resolve().parent.parent
