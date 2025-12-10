@@ -15,5 +15,15 @@ numpy<2
 
 pydantic
 typing_extensions
-
+python-dateutil
+pytz
+pillow
+sympy
+scikit-learn
+transformers<4.40
+lang_chain_core
+pydantic<2
+httpx
+sniffio
+distro
 
