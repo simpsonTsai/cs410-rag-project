@@ -7,7 +7,7 @@ from sentence_transformers import SentenceTransformer, CrossEncoder
 from rank_bm25 import BM25Okapi
 import faiss
 
-from embeddings import BGE_MODEL_NAME
+from .embeddings import BGE_MODEL_NAME
 
 
 def tokenize(text: str) -> List[str]:
