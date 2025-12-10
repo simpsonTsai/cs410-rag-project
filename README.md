@@ -175,7 +175,7 @@ After put in your GROQ API KEY:
 ## How to Run the System
 To run the entire system — baseline RAG, improved RAG, GPT-only baseline, evaluation metrics, and visualizations — run:
 ```bash
-python src/run.py
+python -m src.run
 ```
 This performs:
 
