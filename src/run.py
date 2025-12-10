@@ -96,6 +96,14 @@ def main():
         ],
     )
 
+def demo():
+    query = "My cat has been losing weight, vomiting intermittently, and has elevated ALT levels. What are possible diagnoses?"
+    answer, evidence = rag_pipeline(query)
+    print("Query:", query)
+    print("Answer:", answer)
+    print("Evidence:", evidence)
+
 
 if __name__ == "__main__":
     main()
+    demo()
