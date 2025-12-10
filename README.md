@@ -168,7 +168,7 @@ In this step you need to go to Groq website and create a free API key.
 website address: https://console.groq.com/keys
 
 After put in your GROQ API KEY:
-1. Ctrl + 0 (store)
+1. Ctrl + o (store)
 2. Enter
 3. Ctrl + X (exit)
 
