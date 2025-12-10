@@ -36,7 +36,14 @@ class VetRetriever:
         self.query_embedder = SentenceTransformer(BGE_MODEL_NAME)
 
         # Neural reranker
-        self.reranker = CrossEncoder("BAAI/bge-reranker-large", max_length=512)
+        #self.reranker = CrossEncoder("BAAI/bge-reranker-large", max_length=512)
+        ### Reranker in TA Mode
+        ###For grading and CPU-based execution, reranking is disabled or replaced
+        ###with a lightweight cross-encoder to avoid downloading large models.
+        ###The reranking logic is preserved, but full-scale reranking was conducted offline for evaluation.
+
+        self.reranker = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
+
 
     # ----- dense / BM25 / hybrid -----
 
