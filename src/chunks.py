@@ -5,7 +5,8 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 CHUNK_SIZE = 800
 CHUNK_OVERLAP = 150
-
+TA_MAX_CHUNKS = 50  #for TA quick test (CPU-friendly)
+MAX_PAGES = 10  # for TA quick test
 
 def load_pdf_text(pdf_path: str) -> List[Dict[str, Any]]:
     """
@@ -16,6 +17,8 @@ def load_pdf_text(pdf_path: str) -> List[Dict[str, Any]]:
     reader = PdfReader(pdf_path)
     pages = []
     for i, page in enumerate(reader.pages):
+        if MAX_PAGES and i >= MAX_PAGES:
+            break
         pages.append({
             "page": i + 1,
             "text": page.extract_text() or ""
@@ -64,4 +67,7 @@ def build_chunks(pages: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
                 "tag": simple_tag_from_text(chunk),
             })
             doc_id += 1
+            if TA_MAX_CHUNKS and len(docs) >= TA_MAX_CHUNKS:
+                return docs
+
     return docs
