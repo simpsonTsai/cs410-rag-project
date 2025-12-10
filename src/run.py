@@ -8,7 +8,7 @@ from .chunks import load_pdf_text, build_chunks
 from .embeddings import build_bge_embeddings, build_faiss_index
 from .retriever import VetRetriever
 
-from agent import run_full_experiment
+from .agent import run_full_experiment
 from plotting import (
     plot_correctness_bar,
     plot_hallucination_bar,
