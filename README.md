@@ -71,8 +71,6 @@ cs410-rag-project/
 │   ├──  hallucination.png
 │   ├──  evidencyrelevancy.png
 │   ├── radarchart.png 
-├── docs/
-│   └── usage.md           # extended documentation (optional)
 │
 ├── requirements.txt
 ├── .env.example
