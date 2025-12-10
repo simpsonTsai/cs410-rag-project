@@ -90,15 +90,40 @@ Please use Python **3.10.x** to ensure smooth installation of all dependencies
 (e.g., `faiss-cpu` and `sentence-transformers`) without requiring system-level
 build tools such as `cmake`.
 
-## Hardware & Performance Notes
+## Quick Test Mode (For TA / CPU-Based Grading)
 
-This project can run entirely on CPU.
-However, due to the use of dense embeddings (bge-m3) and re-ranking models,
-some steps such as indexing and retrieval may take more than several minutes on a CPU-only machine.
+This project includes a built-in **TA quick-test mode** to ensure smooth
+and reproducible grading on CPU-only machines.
 
-For grading purposes:
-- The system logic, retrieval pipeline, and generation flow can be verified on CPU.
-- Full-scale experiments were conducted offline and the results are documented in the pic file.
+### Purpose
+The goal of this mode is to allow graders to quickly verify the **complete
+RAG pipeline** (chunking → embedding → retrieval → generation → evaluation)
+without requiring GPU resources or long execution time.
+
+### Behavior in TA Mode
+When TA mode is enabled (default):
+- Only the first **10 PDF pages** are loaded
+- At most **50 text chunks** are generated
+- At most **50 chunks** are embedded for dense retrieval
+- The system logic and data flow remain unchanged
+
+On a CPU-only machine, the full pipeline completes within **1–3 minutes**.
+
+### Full Experiment Results
+All evaluation figures, analyses, and reported results in this project were
+generated using the **full dataset and complete pipeline**.
+TA mode is provided strictly for grading and verification convenience and
+does not alter the system design or conclusions.
+
+### How to Switch Modes
+TA mode is enabled by default.
+To run the full experiment, set the following flag to `False`:
+
+```python
+# src/config.py
+TA_MODE = False
+```
+
 
 
 ### 1. Clone the repository
