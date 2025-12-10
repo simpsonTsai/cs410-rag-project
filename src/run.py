@@ -118,9 +118,6 @@ def run_example_usage():
     print("\n--- Improved RAG ---")
     print(df_improved_eval.iloc[0]["answer"])
 
-    print("\nSupporting Evidence (Improved):")
-    for i, ev in enumerate(df_improved_eval.iloc[0]["evidence"], 1):
-        print(f"[{i}] {ev}")
 
 
 
