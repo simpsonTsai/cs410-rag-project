@@ -1,5 +1,5 @@
 from typing import List, Dict, Any
-from config import TA_MODE, TA_MAX_PAGES, TA_MAX_CHUNKS
+from .config import TA_MODE, TA_MAX_PAGES, TA_MAX_CHUNKS
 from pypdf import PdfReader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
