@@ -4,7 +4,7 @@ from typing import Any, Dict, List
 import pandas as pd
 from groq import Groq
 
-from prompts import (
+from .prompts import (
     ClinicalCase,
     SYSTEM_PROMPT,
     build_case_query,
@@ -12,10 +12,10 @@ from prompts import (
     build_clinical_prompt_improved,
     case_to_free_text,
 )
-from retriever import VetRetriever
-from decomposer import decompose_case_query
-from fusion import retrieve_multi_aspect
-from evaluation import evaluate_system
+from .retriever import VetRetriever
+from .decomposer import decompose_case_query
+from .fusion import retrieve_multi_aspect
+from .evaluation import evaluate_system
 
 
 def generate_answer_with_groq(
