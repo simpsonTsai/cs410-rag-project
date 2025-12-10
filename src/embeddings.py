@@ -3,7 +3,7 @@ from typing import List, Dict, Any
 import numpy as np
 from sentence_transformers import SentenceTransformer
 import faiss
-from config import TA_MODE, TA_MAX_EMBED
+from .config import TA_MODE, TA_MAX_EMBED
 
 
 BGE_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
