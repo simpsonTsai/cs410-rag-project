@@ -90,42 +90,41 @@ build tools such as `cmake`.
 ### 1. Clone the repository
 
 ```bash
-- git clone https://github.com/simpsonTsai/cs410-rag-project.git
-- cd cs410-rag-project
+git clone https://github.com/simpsonTsai/cs410-rag-project.git
+
+cd cs410-rag-project
 ```
 
 
 ### 2. Create a virtual environment
 ```bash
-- python3 -m venv venv
+python3 -m venv venv
 ```
 #### Mac/Linux
 ```bash
-- source venv/bin/activate    
+source venv/bin/activate    
 ```
 #### Windows
 ```bash
-- venv\Scripts\activate         
+venv\Scripts\activate         
 ```
 
 ### 3. Install dependencies
 ```bash
-- pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ## API Keys Setup
 
 ### 1. Create your .env file:
 ```bash
-- cp .env.example .env
+cp .env.example .env
 ```
 ### 2. Open .env and add your key:
 ```bash
-- nano .env
+nano .env
 ```
-```bash
-- GROQ_API_KEY=your_key_here
-```
+GROQ_API_KEY=your_key_here
 After put in your GROQ API KEY:
 1. Ctrl + 0 (store)
 2. Enter
@@ -140,7 +139,7 @@ An appropriate reference of databook.pdf is shown below.
 ## How to Run the System
 To run the entire system — baseline RAG, improved RAG, GPT-only baseline, evaluation metrics, and visualizations — run:
 ```bash
-- python src/run.py
+python src/run.py
 ```
 This performs:
 
