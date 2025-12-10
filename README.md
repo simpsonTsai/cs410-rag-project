@@ -81,7 +81,6 @@ cs410-rag-project/
 
 ---
 
-## Installation
 ## 🐍 Python Version
 
 This project is tested and supported on **Python 3.10**.
@@ -119,12 +118,11 @@ does not alter the system design or conclusions.
 TA mode is enabled by default.
 To run the full experiment, set the following flag to `False`:
 
-```python
 # src/config.py
 TA_MODE = False
-```
 
 
+## Installation
 
 ### 1. Clone the repository
 
