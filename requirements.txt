@@ -1,5 +1,4 @@
 pypdf
-sentence-transformers
 langchain-text-splitters
 tqdm
 pandas
@@ -9,4 +8,5 @@ rank-bm25
 groq
 python-dotenv
 matplotlib
-torch>=2.6.0
+torch>=2.0
+sentence-transformers>=2.6.0
