@@ -99,7 +99,7 @@ def main():
 def run_example_usage():
     load_dotenv()
     client, retriever = init_vetrag_pipeline()
-        (
+    (
         df_baseline_eval,
         df_improved_eval,
         df_gpt_eval,
