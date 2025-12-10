@@ -65,9 +65,12 @@ cs410-rag-project/
 ├── data/
 │   └── databook.pdf       # veterinary internal medicine databook (textbook)
 │
-├── notebooks/
-│   └── demo.ipynb         # optional Colab-style demo (not required for grading)
-│
+├── pic/
+│   ├──  allnumber.png         # evaluation result
+│   ├──  correctness.png
+│   ├──  hallucination.png
+│   ├──  evidencyrelevancy.png
+│   ├── radarchart.png 
 ├── docs/
 │   └── usage.md           # extended documentation (optional)
 │
