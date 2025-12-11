@@ -74,7 +74,8 @@ cs410-rag-project/
 │
 ├── requirements.txt
 ├── .env.example
-└── README.md
+├── README.md
+└── evaluation  # Observation of evaluation result
 ```
 
 ---
