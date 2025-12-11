@@ -1,10 +1,10 @@
-###Evaluation
+Evaluation
 
 We evaluated three systems: (1) the baseline RAG pipeline, (2) an improved RAG system with enhanced evidence handling, and (3) a GPT-only model without retrieval. All systems were tested on the same set of veterinary clinical queries. Performance was assessed along three dimensions: correctness, hallucination, and evidence relevance, each scored on a 0–10 scale.
 
 
 
-##Correctness
+Correctness
 
 From the results, the GPT-only model ended up with the highest correctness score.
 This wasn’t too surprising because the model has seen a lot of medical text during pretraining, so sometimes it can “guess right” even without looking at any reference documents.
@@ -14,7 +14,7 @@ The gain is not huge, but it is consistent.
 This tells me that the improvements I added around query handling and retrieval didn’t hurt the model’s ability to answer the question; if anything, they helped it stay on the right track more often.
 
 
-##Hallucination
+Hallucination
 
 Hallucination is where the differences between the systems show up the most.
 GPT-only has the highest hallucination by far.
@@ -26,7 +26,7 @@ Even with RAG, the model sometimes fills in details that aren’t directly in th
 So this result actually makes sense—RAG helps, but it doesn’t “force” the model to stay 100% grounded.
 
 
-##Evidence Relevance
+Evidence Relevance
 
 For evidence relevance, the difference between the baseline and improved system is not very big.
 The improved version retrieves slightly better-matched evidence on average, but the improvement is more subtle compared to the other metrics.
@@ -36,7 +36,7 @@ So even though the gain looks small numerically, it still helps the answer feel 
 
 
 
-##Overall Comparison
+Overall Comparison
 
 The radar chart puts all three metrics together and makes the trade-offs easier to see.
 GPT-only looks good on correctness, but the hallucination score makes it unreliable for anything medical.
@@ -45,7 +45,7 @@ The improved RAG system sits somewhere in the middle in a good way: correctness 
 
 For this kind of veterinary question-answering setup, this balance is more realistic than just chasing correctness alone.
 
-#Summary
+Summary
 
 Overall, the improved RAG system behaved closer to what we’d want in a clinical support tool.
 It’s not perfect, but it reduces the risky parts (hallucination) without sacrificing correctness.
